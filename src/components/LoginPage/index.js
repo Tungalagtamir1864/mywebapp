@@ -4,7 +4,7 @@ import Button from "../../components/General/Button";
 import css from "./style.module.css";
 import * as actions from "../redux/actions/loginAction";
 import Spinner from "../../components/General/Spinner";
-import { redirect } from "react-router-dom";
+import { redirect as Redirect } from "react-router-dom";
 
 class Login extends Component {
   state = {
@@ -27,7 +27,7 @@ class Login extends Component {
   render() {
     return (
       <div className={css.Login}>
-        {this.props.userId && <redirect to="/orders" />}
+        {this.props.userId && <Redirect to="/orders" />}
 
         <input
           onChange={this.changeEmail}
