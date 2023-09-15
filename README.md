@@ -1,1 +1,1 @@
-# mywebapp
+# School website
